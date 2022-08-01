@@ -61,6 +61,28 @@ p {
     margin: 20px;
 }
 
+.botao-flutuante {
+    position: fixed;
+    bottom: 1.25rem;
+    right: 1.875rem;
+    z-index: 9999;
+    border: none;
+    outline: none;
+    background-color: #BE253F;
+    color: white;
+    cursor: pointer;
+    padding: 0.938rem;
+    border-radius: 10px;
+    display: flex;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+.botao-flutuante span {
+    margin-left: 1rem;
+    font-family: Lato, sans-serif ;
+}
+
 .lett-footer {
     width: 60%;
     fill: #fff;
@@ -87,5 +109,12 @@ p {
 @keyframes lett-tracado {
     to {
         stroke-dashoffset: 0;
+    }
+}
+
+@media (max-width: 900px) {
+    .container-cards {
+        flex-direction: column;
+        align-items: center;
     }
 }
